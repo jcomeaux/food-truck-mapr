@@ -1,0 +1,10 @@
+name: food_truck_mapr
+runtime:
+  name: python
+  options:
+    toolchain: pip
+description: A minimal AWS Python Pulumi program
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-python
