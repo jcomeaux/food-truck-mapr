@@ -3,6 +3,15 @@
 
 Sample project to ingest publicly available food truck location data in San Francisco and present location info on google maps.
 
+- very simplistic/"monolithic" lambda service that:
+    - is scheduled to fire every hour
+    - grabs the csv from public endpoint
+    - records data in dynamodb
+    - generates simple google maps plotting of active(?) food trucks
+    - presents the map as simple html in s3 website enabled bucket
+
+- all infra managed/created with pulumi/python
+
 ## NOTE:
 Though this exercise calls for pulumi cloud, you should be well within the free tier for managed resources.
 
