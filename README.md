@@ -42,11 +42,12 @@ The lambda service triggers every hour, but if you want to see the map right awa
 
 ## TODO:
 - how do we handle stale data?
-- separate data retrieval, storage, and napping functionality
+- separate data retrieval, storage, and mapping functionality
 - better organize the infra-as-code
 - need to be more restrictive with our lambda execution policy
 - use secrets manager instead of loading in from env vars
 - CI/CD the pulumi run
 - add tests!!!
+- observability: how well does our app perform throughout?
 
 
