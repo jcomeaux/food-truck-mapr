@@ -3,6 +3,9 @@
 
 Sample project to ingest publicly available food truck location data in San Francisco and present location info on google maps.
 
+## NOTE:
+Though this exercise calls for pulumi cloud, you should be well within the free tier for managed resources.
+
 
 ## Dependencies
 
@@ -35,13 +38,12 @@ Outputs:
 ```
 The lambda service triggers every hour, but if you want to see the map right away, just log into the AWS console and trigger the lambda with any test event...content won't matter.
 
-![Example Map](https://pasteboard.co/N21vPz4qN4eL.png)
+[Example Map](https://pasteboard.co/N21vPz4qN4eL.png)
 
 ## TODO:
 - need to be more restrictive with our lambda execution policy
 - use secrets manager instead of loading in from env vars
 - CI/CD the pulumi run
 - add tests!!!
-
 
 
